@@ -242,7 +242,7 @@ footer {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          padding-right: 1.5rem;
+          padding-right: 3rem;
 
             h1 {
               text-transform: uppercase;
