@@ -223,7 +223,7 @@ footer {
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
     overflow: hidden;
-    height: 390px;
+    height: 380px;
     padding-top: 3rem;
     padding-left: 17vw;
     padding-right: 17vw;
