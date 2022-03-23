@@ -215,6 +215,7 @@ main {
       flex-wrap: wrap;
       justify-content: center;
       padding-bottom: 2rem;
+      width: 100%;
     }
 
     .cont-load-more {
