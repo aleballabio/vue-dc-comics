@@ -213,9 +213,8 @@ main {
     .container-cards {
       display: flex;
       flex-wrap: wrap;
-      padding-bottom: 10px;
+      justify-content: center;
       padding-bottom: 2rem;
-      width: 100%;
     }
 
     .cont-load-more {
@@ -241,19 +240,16 @@ main {
 
     div {
       display: flex;
+      justify-content: center;
       align-items: center;
-      padding-left: 1rem;
-      padding-right: 1rem;
 
       ul {
-        flex-grow: 1;
         list-style: none;
         display: flex;
         align-items: center;
       }
 
       li {
-        flex-grow: 1;
         display: flex;
         align-items: center;
 

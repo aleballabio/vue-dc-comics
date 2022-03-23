@@ -211,18 +211,15 @@ export default {
 @import "../temporary/variables";
 
 footer {
-  background-image: url("../assets/img/footer-bg.jpg");
-  background-size: cover;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
   //Links
   .first-section {
+    background-image: url("../assets/img/footer-bg.jpg");
+    background-size: cover;
     overflow: hidden;
     height: 380px;
     padding-top: 3rem;
-    margin: 0 auto;
-    width: 1400px;
+    padding-left: 17vw;
+    padding-right: 17vw;
 
     div {
       display: flex;
