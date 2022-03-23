@@ -23,7 +23,6 @@ export default {
 
 .card {
   flex-basis: calc(100% / 6 - 2rem);
-  flex-shrink: 1;
   display: flex;
   flex-direction: column;
   padding: 1rem;

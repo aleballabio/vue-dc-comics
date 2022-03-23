@@ -1,7 +1,7 @@
 <template>
   <header>
-    <div>
-      <div class="container-slide">
+    <div class="container-slide">
+      <div>
         <img src="../assets/img/dc-logo.png" alt="Logo Dc" />
 
         <nav>
@@ -95,6 +95,7 @@ header {
 
       ul {
         display: flex;
+
         align-items: center;
         list-style: none;
         height: 100%;

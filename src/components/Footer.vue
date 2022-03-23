@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="first-section">
-      <div>
+      <div class="container-slide-noheight">
         <div class="container-links">
           <div v-for="nav in navigationList" :key="nav" class="link">
             <h1>{{ nav.category }}</h1>
@@ -211,15 +211,14 @@ export default {
 @import "../temporary/variables";
 
 footer {
+  background-image: url("../assets/img/footer-bg.jpg");
+  background-size: cover;
+
   //Links
   .first-section {
-    background-image: url("../assets/img/footer-bg.jpg");
-    background-size: cover;
     overflow: hidden;
     height: 380px;
     padding-top: 3rem;
-    padding-left: 17vw;
-    padding-right: 17vw;
 
     div {
       display: flex;
