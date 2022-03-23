@@ -81,7 +81,7 @@ export default {
 header {
 
         div { 
-
+            height: 100%;
             background-color: white;
 
 
@@ -89,10 +89,15 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 100%;
 
             img {
                 
                 width: 80px;
+            }
+
+            nav {
+                height: 100%;
             }
 
         
@@ -100,18 +105,28 @@ header {
                 display: flex;
                 align-items: center;
                 list-style: none;
+                height: 100%;
 
 
                 li {
-                    
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    text-align: center;
+                    padding: 10px;
+
                     a {
                         font-size: .9rem;
                         text-decoration: none;
                         font-weight: bold;
                         text-transform: uppercase;
-                        padding: 1rem;
-                        color:black
+                        color:black;
                     }
+                }
+
+                li:hover  {
+                    border-bottom: 2px $blue solid;
+                    margin-bottom: -2px;
                 }
             }
         }

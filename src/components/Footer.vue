@@ -235,8 +235,11 @@ footer {
       .container-links {
 
         display: flex;
-        justify-content: column;
         align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 300px;
+
 
         .link {
           display: flex;
