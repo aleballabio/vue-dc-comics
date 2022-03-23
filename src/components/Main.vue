@@ -243,14 +243,18 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
 
       ul {
+        flex-grow: 1;
         list-style: none;
         display: flex;
         align-items: center;
       }
 
       li {
+        flex-grow: 1;
         display: flex;
         align-items: center;
 
