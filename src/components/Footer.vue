@@ -1,85 +1,87 @@
 <template>
-    <footer>
-      <div class="first-section">
-        <div>
-
-          <div class="container-links">
-            <div v-for="nav in navigationList" :key="nav" class="link">
-            <h1> {{ nav.category }}</h1>
-              <ul v-for="linkNav in nav.links" :key="linkNav">
-                <li>{{ linkNav.text }} </li>
-              </ul>
-
-            </div>
-          </div>
-        <img src="../assets/img/dc-logo-bg.png" alt="dcLogoBg" class="dclogo">
-        </div>
-      </div>
-
-      <div class="second-section">
-        <div class="container-slide">
-          <div class="sign-up">
-            <button>Sign-UP Now</button>
-          </div>
-
-          <div class="social">
-            <h1>Follow Us</h1>
-
-            <div class="icons">
-              <img v-for="social in socials" :key="social" :src="social.img" :alt="social.nome" class="icon-image">
-            </div>
+  <footer>
+    <div class="first-section">
+      <div>
+        <div class="container-links">
+          <div v-for="nav in navigationList" :key="nav" class="link">
+            <h1>{{ nav.category }}</h1>
+            <ul v-for="linkNav in nav.links" :key="linkNav">
+              <li>{{ linkNav.text }}</li>
+            </ul>
           </div>
         </div>
+        <img src="../assets/img/dc-logo-bg.png" alt="dcLogoBg" class="dclogo" />
       </div>
+    </div>
 
-      <div class="container-small"></div>
-    </footer>
+    <div class="second-section">
+      <div class="container-slide">
+        <div class="sign-up">
+          <button>Sign-UP Now</button>
+        </div>
+
+        <div class="social">
+          <h1>Follow Us</h1>
+
+          <div class="icons">
+            <img
+              v-for="social in socials"
+              :key="social"
+              :src="social.img"
+              :alt="social.nome"
+              class="icon-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-small"></div>
+  </footer>
 </template>
 
 <script>
-
-import Facebook from '../assets/img/footer-facebook.png';
-import Twitter from '../assets/img/footer-twitter.png';
-import Periscope from '../assets/img/footer-periscope.png';
-import Youtube from '../assets/img/footer-youtube.png';
-import Pinterest from '../assets/img/footer-pinterest.png';
+import Facebook from "../assets/img/footer-facebook.png";
+import Twitter from "../assets/img/footer-twitter.png";
+import Periscope from "../assets/img/footer-periscope.png";
+import Youtube from "../assets/img/footer-youtube.png";
+import Pinterest from "../assets/img/footer-pinterest.png";
 
 export default {
-  name: 'FooterDC',
+  name: "FooterDC",
 
-  data () {
+  data() {
     return {
-
       navigationList: [
         {
           category: "DC Comics",
           links: [
             {
-              text: "Characters"
+              text: "Characters",
             },
 
             {
-              text: "Comics"
+              text: "Comics",
             },
 
             {
-              text: "Movies"
+              text: "Movies",
             },
 
             {
-              text: "TV"
+              text: "TV",
             },
 
             {
-              text: "Games"
+              text: "Games",
             },
 
             {
-              text: "Videos"
+              text: "Videos",
             },
 
             {
-              text: "News"
+              text: "News",
             },
           ],
         },
@@ -88,91 +90,91 @@ export default {
           category: "Shop",
           links: [
             {
-              text: "Shop DC"
+              text: "Shop DC",
             },
 
             {
-              text: "Shop DC Collectibles"
-            }
-          ]
+              text: "Shop DC Collectibles",
+            },
+          ],
         },
 
         {
           category: "DC",
           links: [
             {
-              text: "Terms Of Use"
+              text: "Terms Of Use",
             },
 
             {
-              text: "Privacy policy (New)"
+              text: "Privacy policy (New)",
             },
 
             {
-              text: "Ad Choices"
+              text: "Ad Choices",
             },
 
             {
-              text: "Advertising"
+              text: "Advertising",
             },
 
             {
-              text: "Jobs"
+              text: "Jobs",
             },
 
             {
-              text: "Subscriptions"
+              text: "Subscriptions",
             },
 
             {
-              text: "Talent Workshops"
+              text: "Talent Workshops",
             },
 
             {
-              text: "CPSC Certificates"
+              text: "CPSC Certificates",
             },
 
             {
-              text: "Ratings"
+              text: "Ratings",
             },
 
             {
-              text: "Shop Help"
+              text: "Shop Help",
             },
 
             {
-              text: "Contact Us"
+              text: "Contact Us",
             },
           ],
         },
 
-                {
+        {
           category: "Sites",
           links: [
             {
-              text: "DC"
+              text: "DC",
             },
 
             {
-              text: "MAD Magazine"
+              text: "MAD Magazine",
             },
 
             {
-              text: "DC  Kids"
+              text: "DC  Kids",
             },
 
             {
-              text: "DC Universe"
+              text: "DC Universe",
             },
 
             {
-              text: "DC Power Visa"
+              text: "DC Power Visa",
             },
           ],
-        }
+        },
       ],
 
-      socials : [
+      socials: [
         {
           nome: "Facebook",
           img: Facebook,
@@ -197,30 +199,23 @@ export default {
           nome: "Periscope",
           img: Periscope,
         },
-      ]
+      ],
     };
-
   },
 
-  components: {
-  }
-}
-
+  components: {},
+};
 </script>
 
 <style scoped lang="scss">
-
 @import "../temporary/preformat";
 @import "../temporary/reset";
 @import "../temporary/variables";
 
-
 footer {
-
-  
   //Links
   .first-section {
-    background-image: url('../assets/img/footer-bg.jpg');
+    background-image: url("../assets/img/footer-bg.jpg");
     background-size: cover;
     overflow: hidden;
     height: 380px;
@@ -233,13 +228,11 @@ footer {
       justify-content: space-between;
 
       .container-links {
-
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         flex-wrap: wrap;
         height: 300px;
-
 
         .link {
           display: flex;
@@ -247,36 +240,35 @@ footer {
           align-items: flex-start;
           padding-right: 3rem;
 
-            h1 {
-              text-transform: uppercase;
-              padding-bottom: 1rem;
-            }
+          h1 {
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+          }
 
-            ul {
-              list-style: none;
-              vertical-align: middle;
-              padding-bottom: 1rem;
+          ul {
+            list-style: none;
+            vertical-align: middle;
+            padding-bottom: 1rem;
 
-                li {
-                  line-height: .2rem;
-                  color: $lightgrey;
-                  font-size: .8rem;
+            li {
+              line-height: 0.2rem;
+              color: $lightgrey;
+              font-size: 0.8rem;
 
-                  a  {
-                    text-decoration: none;
-                  }
-
+              a {
+                text-decoration: none;
               }
             }
           }
         }
       }
+    }
 
     .dclogo {
       position: relative;
-       bottom: 150px;
-     }
-  } 
+      bottom: 150px;
+    }
+  }
 
   //Sign Up Mail
 
@@ -294,13 +286,12 @@ footer {
           background-color: transparent;
           color: white;
           text-transform: uppercase;
-          padding: .8rem;
+          padding: 0.8rem;
           font-size: 1.1rem;
         }
       }
 
       .social {
-        
         h1 {
           color: $blue;
           text-transform: uppercase;
@@ -308,12 +299,9 @@ footer {
 
         .icon-image {
           padding-left: 1rem;
-
         }
       }
     }
   }
-
 }
-
 </style>

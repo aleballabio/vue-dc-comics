@@ -19,6 +19,10 @@
             :cardPrice="card.price"
           />
         </div>
+
+        <div class="cont-load-more">
+          <button class="load-more">Load More</button>
+        </div>
       </div>
     </div>
 
@@ -26,10 +30,10 @@
       <div class="container-slide">
         <ul>
           <li v-for="category in categories" :key="category">
-            <a href="#!"
-              ><span><img :src="category.img" alt="category.text" /></span>
-              {{ category.text }}</a
-            >
+            <a href="#!">
+              <span><img :src="category.img" alt="category.text" /></span>
+              {{ category.text }}
+            </a>
           </li>
         </ul>
       </div>
@@ -208,8 +212,25 @@ main {
 
     .container-cards {
       display: flex;
-      align-items: center;
-      padding-top: 1rem;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+      padding-bottom: 2rem;
+    }
+
+    .cont-load-more {
+      text-align: center;
+      padding-bottom: 2rem;
+
+      .load-more {
+        background-color: $blue;
+        border: none;
+        color: white;
+        font-weight: bold;
+
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding: 1rem 5rem;
+      }
     }
   }
 
@@ -230,6 +251,7 @@ main {
       li {
         display: flex;
         align-items: center;
+
         a {
           text-decoration: none;
           text-transform: uppercase;
