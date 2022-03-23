@@ -22,10 +22,12 @@ export default {
 @import "../temporary/variables";
 
 .card {
-  flex-basis: calc(100% / 6 - 1rem);
+  flex-basis: calc(100% / 6 - 2rem);
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  margin: 0;
 }
 
 .container-image {
