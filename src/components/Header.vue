@@ -116,8 +116,8 @@ header {
         }
 
         li:hover {
-          border-bottom: 2px $blue solid;
-          margin-bottom: -2px;
+          border-bottom: 3px $blue solid;
+          margin-bottom: -3px;
         }
       }
     }
