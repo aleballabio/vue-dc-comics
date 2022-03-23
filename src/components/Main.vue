@@ -213,7 +213,7 @@ main {
     .container-cards {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      padding-bottom: 10px;
       padding-bottom: 2rem;
       width: 100%;
     }
