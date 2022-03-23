@@ -11,6 +11,7 @@ import HeaderDC from './components/Header.vue';
 import MainDC from './components/Main.vue';
 import FooterDC from './components/Footer.vue';
 
+
 export default {
   name: 'App',
   components: {
@@ -24,7 +25,7 @@ export default {
 
 
 <style lang="scss">
-
+@import "temporary/reset";
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');;
 
   #app {
