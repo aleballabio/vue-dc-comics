@@ -35,8 +35,6 @@
         </div>
       </div>
     </div>
-
-    <div class="container-small"></div>
   </footer>
 </template>
 

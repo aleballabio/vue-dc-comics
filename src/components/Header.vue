@@ -1,7 +1,6 @@
 <template>
   <header>
-    <div class="container-small"></div>
-    <div class="">
+    <div>
       <div class="container-slide">
         <img src="../assets/img/dc-logo.png" alt="Logo Dc" />
 
