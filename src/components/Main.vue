@@ -229,7 +229,7 @@ main {
 
         font-size: 0.9rem;
         text-transform: uppercase;
-        padding: 1rem 5rem;
+        padding: 1rem 4rem;
       }
     }
   }
